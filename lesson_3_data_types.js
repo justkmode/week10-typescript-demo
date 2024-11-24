@@ -11,7 +11,7 @@ console.log(typeof cpuUtilization); // Outputs: number
 // 2 ---- String ----
 const region = "us-west-2";
 const errorMessage = "Resource not found";
-const logEntry = "Deployment failed in ${region}: ${erroeMessage}";
+const logEntry = "Deployment failed in ${region}: ${errorMessage}";
 
 console.log(typeof region); // Outputs: string
 
@@ -30,7 +30,7 @@ let configFile;
 console.log(typeof configFile); // Outputs: undefined 
 
 if (configFile === undefined) {
-console.log("Config file not loaded");
+    console.log("Config file not loaded");
     // Load config file here
 }
 
@@ -39,7 +39,7 @@ const cacheResult = null;
 console.log(typeof cacheResult); // Outputs: Object (this is a known JavaScript quirk)
 
 if (cacheResult === null) {
-    console.log("No data in cache, tetching from database");
+    console.log("No data in cache, fetching from database");
     // Fetch data from database
 }
 
@@ -58,5 +58,9 @@ console.log(ec2Instance.type); // Outputs: t2.micro
 const availabilityZones = ["us-west-2a", "us-west-2b", "us-west-2c"];
 console.log(typeof availabilityZones); // Outputs: object
 console.log(Array.isArray(availabilityZones)); // Outputs: true
+
+availabilityZones.forEach(zone => {
+    console.log("Deploying to ${zone}");
+});
 
 // 8 ----    ----
