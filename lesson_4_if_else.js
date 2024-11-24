@@ -12,9 +12,9 @@ if (cloudProvider === "AWS") {
 
 // Exercise - Make your own If / Else Statement for Terraform
 
-let iacProvider = "terraform";
+let iacProvider = "Terraform";
 
-if (cloudProvider === "terraform") {
+if (cloudProvider === "Terraform") {
     console.log("We're using Terraform");
 } else {
     console.log("We're not using Terraform");
