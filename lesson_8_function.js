@@ -21,4 +21,15 @@ deployToRegion("us-west-2");
 // // ---- Exercise ----
 // Function name configureService
 
-// 
+// two parameters, serviceName and tier ( EC2, t2.micro)
+
+// Inside the function - console.log + print both parameters
+
+// Call function
+
+function configureService(serviceName, tier) {
+    console.log("Configuring " + serviceName + " service with tier: " + tier);
+}
+
+configureService("EC2","t2.micro")
+configureService("S3","standard")
