@@ -1,4 +1,10 @@
 
+// ---- Basic Functions ----
+
+function sayHello() {
+    console.log("Hello, Cloud Engineer!")
+}
+
 // Calling function
 sayHello();
 
